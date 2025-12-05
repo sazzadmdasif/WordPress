@@ -1,0 +1,7 @@
+Function - Will remove the Site title and keep the tagline as tab title.
+
+File - Function.php (at the bottom)
+Code -
+add_filter('pre_get_document_title', function() {
+    return get_bloginfo('description');
+});
